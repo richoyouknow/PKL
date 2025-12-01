@@ -17,3 +17,11 @@ Route::get('/simpanan', function () {
 Route::get('/pinjaman', function () {
     return view('pinjaman');
 })->name('pinjaman');
+
+Route::get('/transaksi', function () {
+    return view('transaksi');
+})->name('transaksi');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
