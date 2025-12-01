@@ -10,22 +10,22 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 0) {
             $('.sticky-top').addClass('bg-white shadow-sm').css('top', '0px');
         } else {
             $('.sticky-top').removeClass('bg-white shadow-sm').css('top', '-150px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -61,6 +61,6 @@
         loop: true,
         nav: false
     });
-    
+
 })(jQuery);
 
