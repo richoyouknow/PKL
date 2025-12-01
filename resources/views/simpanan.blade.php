@@ -1,7 +1,6 @@
 @extends('layout.master')
 
 @section('content')
-<h1>Halaman Pinjaman</h1>
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container">
@@ -9,10 +8,10 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg" alt="">
+                            <img class="img-fluid" src="iStudio-1.0.0/img/about-1.jpg" alt="">
                         </div>
                         <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid h-75" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid h-75" src="iStudio-1.0.0/img/about-2.jpg" alt="">
                             <div class="h-25 d-flex align-items-center text-center bg-primary px-4">
                                 <h4 class="text-white lh-base mb-0">Award Winning Studio Since 1990</h4>
                             </div>

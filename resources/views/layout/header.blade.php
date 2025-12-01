@@ -12,7 +12,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="{{ route('beranda') }}" class="nav-item nav-link active">Home</a>
                         <a href="{{ route('simpanan') }}" class="nav-item nav-link">Simpanan</a>
                         <a href="{{ route('pinjaman') }}" class="nav-item nav-link">Pinjaman</a>
                         <a href="project.html" class="nav-item nav-link">Projects</a>

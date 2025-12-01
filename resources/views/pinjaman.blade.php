@@ -1,4 +1,6 @@
-@include('layout.master')
+@extends('layout.master')
+
+@section('content')
     <!-- Service Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
@@ -70,3 +72,4 @@
         </div>
     </div>
     <!-- Service End -->
+@endsection
