@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layout.master', ['title' => 'Dashboard']);
-})->name('master');
+    return view('beranda', ['title' => 'Dashboard']);
+})->name('beranda');
 
 Route::get('/beranda', function () {
     return view('beranda');

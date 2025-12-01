@@ -1,7 +1,5 @@
+@extends('layout.master')
 @section('content')
-    <!-- isi halaman beranda -->
-    <h1>Selamat Datang di Beranda</h1>
-
     <!-- Hero Start -->
     <div class="container-fluid pb-5 hero-header bg-light mb-5">
         <div class="container py-5">
