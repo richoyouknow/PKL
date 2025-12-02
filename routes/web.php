@@ -22,6 +22,7 @@ Route::get('/transaksi', function () {
     return view('transaksi');
 })->name('transaksi');
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/loginn', function () {
+    return view('loginn');
 })->name('login');
+
