@@ -1,12 +1,16 @@
 @extends('layout.master')
 
 @push('styles')
-    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
         tailwind.config = {
             darkMode: "class",
             important: "#tailwind-scope",
+            corePlugins: {
+                preflight: false, // <= WAJIB untuk melindungi navbar bootstrap
+            },
+
             theme: {
                 extend: {
                     colors: {
@@ -24,10 +28,29 @@
 @endpush
 
 @section('content')
+    <!-- Hero Start -->
+    <div class="container-fluid pb-5 hero-header bg-light mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h1 class="display-1 mb-4 animated slideInRight">Selamat Datang di <span
+                            class="text-primary">Koperasi</span>
+                    </h1>
+                    <h5 class="d-inline-block border border-2 border-white py-3 px-5 mb-0 animated slideInRight">
+                        Daun Emas Nusantara</h5>
+                </div>
+                <div class="col-lg-6 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img src="denmart.jpeg" class="img-fluid rounded shadow" alt="Header Image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
     <!-- About Start -->
     <div id="tailwind-scope">
         <div class="relative min-h-screen w-full bg-background-light dark:bg-background-dark py-10">
-            <div class="max-w-9xl mx-auto px-4">
+            <div class="max-w-5xl mx-auto px-4">
 
                 <!-- HEADER -->
                 <div class="flex flex-wrap justify-between items-start gap-4 mb-8 animated slideInDown">
