@@ -120,7 +120,8 @@
                 </div>
 
                 <!-- RIWAYAT TRANSAKSI -->
-                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mt-10 mb-3 animated slideInDown">Riwayat Transaksi</h2>
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mt-10 mb-3 animated slideInDown">Riwayat
+                    Transaksi</h2>
 
                 <div
                     class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden animated slideInUp">

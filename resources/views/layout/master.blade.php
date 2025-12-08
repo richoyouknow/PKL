@@ -27,7 +27,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('iStudio-1.0.0/css/style.css') }}" rel="stylesheet">
-    
+
 
     {{-- Tambahan Styles Untuk Halaman Anak --}}
     @stack('styles')
@@ -72,5 +72,8 @@
     {{-- Script Tambahan Halaman Anak --}}
     @stack('scripts')
 
+
+
 </body>
+
 </html>

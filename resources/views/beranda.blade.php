@@ -8,8 +8,6 @@
                     <h1 class="display-1 mb-4 animated slideInRight">Selamat Datang di <span
                             class="text-primary">Koperasi</span>
                     </h1>
-                    <h5 class="d-inline-block border border-2 border-white py-3 px-5 mb-0 animated slideInRight">
-                        Daun Emas Nusantara</h5>
                 </div>
                 <div class="col-lg-6 text-center wow fadeIn" data-wow-delay="0.5s">
                     <img src="denmart.jpeg" class="img-fluid rounded shadow" alt="Header Image">
