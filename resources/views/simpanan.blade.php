@@ -27,10 +27,10 @@
     <!-- About Start -->
     <div id="tailwind-scope">
         <div class="relative min-h-screen w-full bg-background-light dark:bg-background-dark py-10">
-            <div class="max-w-5xl mx-auto px-4">
+            <div class="max-w-9xl mx-auto px-4">
 
                 <!-- HEADER -->
-                <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                <div class="flex flex-wrap justify-between items-start gap-4 mb-8 animated slideInDown">
                     <div>
                         <h1 class="text-4xl font-black text-slate-900 dark:text-slate-50">
                             Detail Simpanan Anggota
@@ -60,7 +60,7 @@
 
                 <!-- DETAIL SIMPANAN -->
                 <div
-                    class="bg-white dark:bg-slate-800/50 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+                    class="bg-white dark:bg-slate-800/50 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700 animated slideInUp">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
                         {{-- Contoh Data (Anda bisa looping dari controller) --}}
@@ -120,10 +120,10 @@
                 </div>
 
                 <!-- RIWAYAT TRANSAKSI -->
-                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mt-10 mb-3">Riwayat Transaksi</h2>
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mt-10 mb-3 animated slideInDown">Riwayat Transaksi</h2>
 
                 <div
-                    class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden">
+                    class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden animated slideInUp">
 
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm text-left">
