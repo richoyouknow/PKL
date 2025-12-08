@@ -33,19 +33,26 @@
                 </div>
                 <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="mb-5"><span class="text-uppercase text-primary bg-light px-2">Profile</span> koperasi</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-5">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
+                    <p class="mb-4">Koperasi Konsumen Daun Emas Nusantara adalah koperasi yang beranggotakan masyarakat
+                        dengan tujuan meningkatkan kesejahteraan ekonomi secara bersama-sama. Koperasi ini berlokasi di
+                        Jalan Mohammad Husni Thamrin No. 143, RT 004 RW 010, Kecamatan Ajung, Kabupaten Jember, dan
+                        menjalankan kegiatan usaha serta pelayanan anggota dalam wilayah Kabupaten Jember, Jawa Timur.</p>
+                    <p class="mb-4">Dalam menjalankan aktivitasnya, koperasi berlandaskan Pancasila dan Undang-Undang
+                        Dasar 1945, serta memegang teguh nilai-nilai kekeluargaan sebagai dasar utama. Setiap kegiatan usaha
+                        dijalankan berdasarkan prinsip koperasi, seperti keanggotaan yang sukarela dan terbuka, pengelolaan
+                        secara demokratis, pembagian SHU yang adil, serta kemandirian dalam pengelolaan organisasi.</p>
+                    <p class="mb-5">Selain itu, koperasi juga menerapkan prinsip pengembangan seperti pendidikan
+                        perkoperasian dan kerja sama antar koperasi. Melalui pemanfaatan sumber daya yang ada, koperasi
+                        berkomitmen memberikan pelayanan terbaik kepada anggota dengan tetap mengikuti kaidah ekonomi dan
+                        prinsip koperasi yang berlaku.</p>
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Sukarela</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Terbuka</h6>
                         </div>
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Demokratis</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Kemandirian</h6>
                         </div>
                     </div>
                 </div>
@@ -237,7 +244,7 @@
     <div class="container py-5">
         <div class="text-center mb-5">
             <h1 class="mb-3"><span class="text-primary">Visi</span> & Misi</h1>
-            <p class="text-muted">Dasar arah pengembangan koperasi untuk melayani anggota secara maksimal.</p>
+            <p class="text-muted">Koperasi Daun Emas.</p>
         </div>
 
         <div class="row g-4">
@@ -246,8 +253,7 @@
                 <div class="p-4 shadow-sm bg-white rounded h-100">
                     <h3 class="text-primary mb-3">Visi</h3>
                     <p>
-                        Menjadi koperasi yang mandiri, modern, dan berdaya saing untuk meningkatkan kesejahteraan anggota
-                        serta memberikan kontribusi positif bagi masyarakat.
+                        Menjadi koperasi yang mandiri, modern, berkualitas dan dapat meningkatkan kesejahteraan anggota
                     </p>
                 </div>
             </div>
@@ -257,10 +263,9 @@
                 <div class="p-4 shadow-sm bg-white rounded h-100">
                     <h3 class="text-primary mb-3">Misi</h3>
                     <ul class="mb-0">
-                        <li>Menyediakan layanan simpan pinjam yang mudah, aman, dan menguntungkan.</li>
-                        <li>Meningkatkan kualitas pengelolaan koperasi secara profesional dan transparan.</li>
-                        <li>Mendorong pemberdayaan ekonomi anggota melalui program usaha produktif.</li>
-                        <li>Membangun hubungan kerjasama yang saling menguntungkan dengan berbagai pihak.</li>
+                        <li>Memberikan layanan prima kepada seluruh anggota dan stakeholder.</li>
+                        <li>Menyediakan produk dan jasa yang sesuai kebutuhan anggota dan stakeholder.</li>
+                        <li>Menjalankan manajemen organisasi yang transparan dan akuntabel.</li>
                     </ul>
                 </div>
             </div>
