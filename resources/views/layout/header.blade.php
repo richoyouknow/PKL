@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-white">
             <a href="{{ route('beranda') }}" class="navbar-brand">
-                <h1>KOPERASI</h1>
+                <img src="denmart.jpeg" alt="Logo" style="height: 50px; width: auto;">
             </a>
             <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -25,18 +25,11 @@
                         Pinjaman
                     </a>
 
-                    <a href="{{ route('transaksi') }}" class="nav-item nav-link {{ Request::is('transaksi') ? 'active' : '' }}">
+                    <a href="{{ route('transaksi') }}"
+                        class="nav-item nav-link {{ Request::is('transaksi') ? 'active' : '' }}">
                         Transaksi
                     </a>
-                    <div class="nav-item dropdown">
-                        <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu bg-light mt-2">
-                            <a href="feature.html" class="dropdown-item">Features</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
+
                     <a href="{{ route('login') }}" class="nav-item nav-link">Masuk</a>
                 </div>
             </div>
