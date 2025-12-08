@@ -1,5 +1,28 @@
 @extends('layout.master')
 
+@push('styles')
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            important: "#tailwind-scope",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#197fe6",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111921",
+                    },
+                },
+            },
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet" />
+@endpush
+
 @section('content')
     <!-- Hero Start -->
     <div class="container-fluid pb-5 bg-primary hero-header">
@@ -22,57 +45,138 @@
     </div>
     <!-- Hero End -->
     <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="iStudio-1.0.0/img/about-1.jpg" alt="">
+    <div id="tailwind-scope">
+        <div class="relative min-h-screen w-full bg-background-light dark:bg-background-dark py-10">
+            <div class="max-w-5xl mx-auto px-4">
+
+                <!-- HEADER -->
+                <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                    <div>
+                        <h1 class="text-4xl font-black text-slate-900 dark:text-slate-50">
+                            Detail Simpanan Anggota
+                        </h1>
+                        <p class="text-slate-500 dark:text-slate-400">
+                            Lihat rincian lengkap simpanan dan riwayat transaksi Anda.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <button
+                            class="h-10 px-4 rounded-lg bg-slate-200 dark:bg-slate-700
+                   text-sm font-semibold flex items-center gap-2 leading-none">
+                            <span class="material-symbols-outlined text-lg">download</span>
+                            Download PDF
+                        </button>
+
+                        <button
+                            class="h-10 px-4 rounded-lg bg-primary text-white
+                   text-sm font-semibold flex items-center gap-2 leading-none">
+                            <span class="material-symbols-outlined text-lg">print</span>
+                            Cetak Laporan
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- DETAIL SIMPANAN -->
+                <div
+                    class="bg-white dark:bg-slate-800/50 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                        {{-- Contoh Data (Anda bisa looping dari controller) --}}
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Tanggal</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">23/10/2023</p>
                         </div>
-                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
-                            <img class="img-fluid h-75" src="iStudio-1.0.0/img/about-2.jpg" alt="">
-                            <div class="h-25 d-flex align-items-center text-center bg-primary px-4">
-                                <h4 class="text-white lh-base mb-0">Award Winning Studio Since 1990</h4>
-                            </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">No Rek</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">0123456789</p>
                         </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Produk Simpanan</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">Simpanan Wajib</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Nomor Anggota</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">KSP-001</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Nama Anggota</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">Budi Santoso</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">No Identitas</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">3301010101010001</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4 col-span-2 lg:col-span-1">
+                            <p class="text-slate-500 text-sm">Alamat</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">
+                                Jl. Merdeka No. 12, Jakarta
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Status Anggota</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">Aktif</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4">
+                            <p class="text-slate-500 text-sm">Tanggal Daftar Rekening</p>
+                            <p class="text-slate-800 dark:text-slate-200 text-sm font-medium">01/01/2020</p>
+                        </div>
+
+                        <div class="flex flex-col border-t py-4 bg-primary/10 dark:bg-primary/20 rounded-lg col-span-2 p-4">
+                            <p class="text-slate-500 dark:text-slate-300 text-sm">Saldo Terakhir</p>
+                            <p class="text-primary dark:text-sky-300 text-2xl font-bold">Rp 15.000.000</p>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="mb-5"><span class="text-uppercase text-primary bg-light px-2">History</span> of Our
-                        Creation</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-5">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                        </div>
+
+                <!-- RIWAYAT TRANSAKSI -->
+                <h2 class="text-xl font-bold text-slate-900 dark:text-slate-50 mt-10 mb-3">Riwayat Transaksi</h2>
+
+                <div
+                    class="bg-white dark:bg-slate-800/50 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden">
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 uppercase">
+                                <tr>
+                                    <th class="px-6 py-3">Tanggal</th>
+                                    <th class="px-6 py-3">Jenis Transaksi</th>
+                                    <th class="px-6 py-3 text-right">Debit</th>
+                                    <th class="px-6 py-3 text-right">Kredit</th>
+                                    <th class="px-6 py-3 text-right">Saldo</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                {{-- Contoh Baris --}}
+                                <tr class="border-b dark:border-slate-700">
+                                    <td class="px-6 py-4 font-medium">20/10/2023</td>
+                                    <td class="px-6 py-4">Setoran Tunai</td>
+                                    <td class="px-6 py-4 text-right text-red-600">Rp 0</td>
+                                    <td class="px-6 py-4 text-right text-green-600">Rp 1.000.000</td>
+                                    <td class="px-6 py-4 text-right font-semibold">Rp 15.000.000</td>
+                                </tr>
+
+                                {{-- Tambahkan Loop Untuk Data Asli --}}
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="d-flex align-items-center mt-5">
-                        <a class="btn btn-primary px-4 me-2" href="#!">Read More</a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2 me-2" href="#!"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square border-2" href="#!"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>
+
     <!-- About End -->
 @endsection
-
-
-
