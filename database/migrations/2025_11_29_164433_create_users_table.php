@@ -14,8 +14,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->enum('role', ['admin', 'anggota'])->default('anggota');
+            $table->enum('status', ['verify', 'active', 'banned']);
             $table->text('alamat')->nullable();
-            $table->string('no_hp', 20)->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
