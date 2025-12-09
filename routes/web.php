@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BerandaController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,3 +27,6 @@ Route::get('/transaksi', function () {
 Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
+Route::post('/loginn', [AuthController::class, 'login']);
+Route::post('/beranda', [BerandaController::class, 'index']);
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

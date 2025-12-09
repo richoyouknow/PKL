@@ -33,14 +33,17 @@
             <form action="/loginn" method="post">
                 @csrf
                 <h1>Login hire.</h1>
-                <input type="email" nama="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email">
                 @error('email')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
-                <input type="password" nama="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password">
                 @error('password')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
+                @if (session('failed'))
+                    <div class="alert alert-danger">{{ session('failed') }}</div>
+                @endif
                 <div class="content">
                     <div class="checkbox">
                         <input type="checkbox" name="remember" id="checkbox">
