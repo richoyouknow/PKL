@@ -26,4 +26,3 @@ Route::get('/transaksi', function () {
 Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
-Route::post('/loginn', [AuthController::class, 'login']);
