@@ -63,7 +63,7 @@ tailwind.config = {
 
             <!-- DETAIL SIMPANAN -->
             <div
-                class="tw-bg-white dark:tw-bg-slate-800/50 tw-rounded-xl tw-p-6 tw-shadow-sm tw-border tw-border-slate-200 dark:tw-border-slate-700 animated slideInUp">
+                class="tw-bg-white dark:tw-bg-slate-800/50 tw-rounded-xl tw-p-6 tw-shadow-sm tw-border tw-border-slate-200 dark:tw-border-slate-700 animated fadeInUp">
 
                 <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-4">
 
@@ -123,12 +123,12 @@ tailwind.config = {
             </div>
 
             <!-- RIWAYAT TRANSAKSI -->
-            <h2 class="tw-text-xl tw-font-bold tw-text-slate-900 dark:tw-text-slate-50 tw-mt-10 tw-mb-3 animated slideInDown">
+            <h2 class="tw-text-xl tw-font-bold tw-text-slate-900 dark:tw-text-slate-50 tw-mt-10 tw-mb-3 animated fadeInUp">
                 Riwayat Transaksi
             </h2>
 
             <div
-                class="tw-bg-white dark:tw-bg-slate-800/50 tw-rounded-xl tw-shadow-sm tw-border tw-border-slate-200 dark:tw-border-slate-700 tw-overflow-hidden animated slideInUp">
+                class="tw-bg-white dark:tw-bg-slate-800/50 tw-rounded-xl tw-shadow-sm tw-border tw-border-slate-200 dark:tw-border-slate-700 tw-overflow-hidden animated fadeInUp">
 
                 <div class="tw-overflow-x-auto">
 

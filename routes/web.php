@@ -26,3 +26,4 @@ Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
 
+
