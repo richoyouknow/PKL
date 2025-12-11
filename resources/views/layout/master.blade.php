@@ -48,7 +48,10 @@
     @include('layout.header')
 
     {{-- CONTENT --}}
+  <div id="page-content">
     @yield('content')
+    </div>
+
 
     {{-- FOOTER --}}
     @include('layout.footer')
@@ -71,8 +74,51 @@
 
     {{-- Script Tambahan Halaman Anak --}}
     @stack('scripts')
+    @if(session('show_login_popup'))
+    <div id="popup-overlay">
+        <div class="popup-box">
+            <h4 class="mb-2">Login Diperlukan</h4>
+            <p class="popup-text">Anda harus login terlebih dahulu untuk mengakses halaman ini.</p>
+            <a href="/loginn" class="btn btn-primary w-100 mt-3">Login Sekarang</a>
+        </div>
+    </div>
 
+    <style>
+        /* Blur hanya untuk konten halaman */
+        #page-content {
+            filter: blur(5px);
+            pointer-events: none; /* konten tidak bisa di klik */
+        }
 
+        #popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.45); /* efek gelap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            backdrop-filter: blur(4px); /* background blur */
+        }
+
+        .popup-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            width: 340px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .popup-text {
+        color: #000 !important;  /* warna hitam */
+        font-size: 15px;
+        }
+    </style>
+@endif
 
 </body>
 
