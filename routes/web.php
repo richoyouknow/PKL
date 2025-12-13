@@ -30,5 +30,5 @@ Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
 Route::post('/loginn', [AuthController::class, 'login']);
-Route::post('/beranda', [BerandaController::class, 'index']);
+Route::match(['get','post'], '/beranda', [BerandaController::class, 'index']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
