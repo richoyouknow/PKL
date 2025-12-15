@@ -17,11 +17,11 @@
             <form action="{{ route('register') }}" method="post">
                 @csrf
                 <h1>Register hire.</h1>
-                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="name" placeholder="Name" value="{{ old('name') }}">
                 @error('name')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" value="{{ old('email') }}">
                 @error('email')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
