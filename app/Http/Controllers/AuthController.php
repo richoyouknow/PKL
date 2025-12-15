@@ -15,6 +15,7 @@ class AuthController extends Controller
             'password' => 'required|max:50',
         ]);
         if(Auth::attempt($request->only('email', 'password'), $request->remember)){
+            if(Auth::user()->role == 'anggota') return redirect('/anggota');
             return redirect('/beranda');
         }
         return back()->with('failed', 'Email atau password salah');

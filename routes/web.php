@@ -22,5 +22,10 @@ Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
 Route::post('/loginn', [AuthController::class, 'login']);
-Route::match(['get','post'], '/beranda', [BerandaController::class, 'index']);
+Route::get('/anggota', function () {
+    return view('anggota');
+});
+Route::group(['middleware' => ['auth', 'check_role:admin']], function(){
+Route::get('/beranda', [BerandaController::class, 'index']);
+});
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
