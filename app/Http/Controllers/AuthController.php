@@ -19,7 +19,9 @@ class AuthController extends Controller
     }
     
     function register(Request $request){
+        
          $request->validate([
+            'name' =>  'required|max:50',
             'email' => 'required|email|max:50',
             'password' => 'required|max:50',
             'confirm_password' => 'required|max:50|min:8|same:password',

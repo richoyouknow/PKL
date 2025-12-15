@@ -14,7 +14,7 @@
     <div class="container slide-up" id="container">
 
         <div class="form-container register-container">
-            <form action="/loginn" method="post">
+            <form action="{{ route('register') }}" method="post">
                 @csrf
                 <h1>Register hire.</h1>
                 <input type="text" name="name" placeholder="Name">
@@ -29,7 +29,7 @@
                 @error('password')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror
-                <input type="password" name="password_confirmation" placeholder="Confirm Password">
+                <input type="password" name="confirm_password" placeholder="Confirm Password">
                 @error('confirm_password')
                     <small class="text-danger">{{ $message }}</small>
                 @enderror

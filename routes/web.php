@@ -12,24 +12,15 @@ Route::get('/', function () {
 })->name('beranda');
 
 
-// Route::get('/simpanan', function () {
-//     return view('simpanan');
-// })->name('simpanan');
-
-// Route::get('/transaksi', function () {
-//     return view('transaksi');
-// })->name('transaksi');
-
 Route::middleware('login.popup')->group(function () {
     Route::get('/simpanan', [SimpananController::class, 'index'])->name('simpanan');
     Route::get('/pinjaman', [PinjamanController::class, 'index'])->name('pinjaman');
      Route::get('/transaksi', [TransaksiController::class, 'index'])->name('transaksi');
 });
-
+Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/loginn', function () {
     return view('loginn');
 })->name('login');
 Route::post('/loginn', [AuthController::class, 'login']);
 Route::match(['get','post'], '/beranda', [BerandaController::class, 'index']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-Route::post('/register', [AuthController::class, 'register']);
