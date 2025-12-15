@@ -59,7 +59,7 @@
 
                             <div class="dropdown-menu dropdown-menu-end shadow-lg border-0 rounded-3">
 
-                                <a href="/profile" class="dropdown-item py-2">
+                                <a href="{{ route('profile') }}" class="dropdown-item py-2">
                                     Profil Saya
                                 </a>
 
