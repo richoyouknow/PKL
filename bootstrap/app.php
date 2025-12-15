@@ -13,9 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-         $middleware->alias([
-            'login.popup' => App\Http\Middleware\CheckLoginPopup::class,
-        ]);
+        $middleware->redirectGuestsTo('/loginn');
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
