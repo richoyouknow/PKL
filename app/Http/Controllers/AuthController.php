@@ -17,11 +17,24 @@ class AuthController extends Controller
         }
         return back()->with('failed', 'Email atau password salah');
     }
+    
+    function register(Request $request){
+         $request->validate([
+            'email' => 'required|email|max:50',
+            'password' => 'required|max:50',
+            'confirm_password' => 'required|max:50|min:8|same:password',
+        ]);
 
+        dd($request->all());
+    }
+    
+    
     public function logout(){
 
     Auth::logout(Auth::user());
     return redirect('/beranda');
-}
+    }
+    
+    
 }
 

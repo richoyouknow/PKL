@@ -30,3 +30,4 @@ Route::get('/loginn', function () {
 Route::post('/loginn', [AuthController::class, 'login']);
 Route::post('/beranda', [BerandaController::class, 'index']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/register', [AuthController::class, 'register']);
