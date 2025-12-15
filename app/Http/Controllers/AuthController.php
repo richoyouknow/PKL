@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+
 
 class AuthController extends Controller
 {
@@ -26,8 +28,10 @@ class AuthController extends Controller
             'password' => 'required|max:50',
             'confirm_password' => 'required|max:50|min:8|same:password',
         ]);
-
-        dd($request->all());
+        $request['status'] = "active";
+        $user = User::create($request->all());
+        Auth::login($user);
+        return redirect('/loginn');
     }
     
     
