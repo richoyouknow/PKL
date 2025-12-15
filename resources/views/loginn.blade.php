@@ -14,11 +14,28 @@
     <div class="container slide-up" id="container">
 
         <div class="form-container register-container">
-            <form action="#">
+            <form action="/loginn" method="post">
+                @csrf
                 <h1>Register hire.</h1>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" name="name" placeholder="Name">
+                @error('name')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
+                <input type="email" name="email" placeholder="Email">
+                @error('email')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
+                <input type="password" name="password" placeholder="Password">
+                @error('password')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
+                <input type="password" name="password_confirmation" placeholder="Confirm Password">
+                @error('confirm_password')
+                    <small class="text-danger">{{ $message }}</small>
+                @enderror
+                @if (session('failed'))
+                    <div class="alert alert-danger">{{ session('failed') }}</div>
+                @endif
                 <button>Register</button>
                 <span>or use your account</span>
                 <div class="social-container">
