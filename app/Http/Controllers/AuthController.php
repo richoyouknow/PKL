@@ -16,7 +16,7 @@ class AuthController extends Controller
         ]);
         if(Auth::attempt($request->only('email', 'password'), $request->remember)){
             if(Auth::user()->role == 'anggota') return redirect('/anggota');
-            return redirect('/beranda');
+            return redirect('/admin');
         }
         return back()->with('failed', 'Email atau password salah');
     }
@@ -36,12 +36,14 @@ class AuthController extends Controller
     }
     
     
-    public function logout(){
+   public function logout(Request $request)
+{
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
 
-    Auth::logout(Auth::user());
-    return redirect('/beranda');
-    }
-    
-    
+    return redirect()->route('beranda'); 
+}
+  
 }
 

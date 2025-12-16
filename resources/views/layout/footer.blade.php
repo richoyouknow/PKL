@@ -31,19 +31,34 @@
                 <h5 class="text-white mb-4">Popular Link</h5>
                 <a class="btn btn-link" href="{{ route('simpanan') }}">Simpanan</a>
                 <a class="btn btn-link" href="{{ route('pinjaman') }}">Pinjaman</a>
+                <a class="btn btn-link" href="/transaksi">Transaksi</a>
 
-                <a class="btn btn-link" href="#!">Privacy Policy</a>
-                <a class="btn btn-link" href="#!">Terms & Condition</a>
-                <a class="btn btn-link" href="#!">Career</a>
             </div>
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                <h5 class="text-white mb-4">Our Services</h5>
-                <a class="btn btn-link" href="#!">Interior Design</a>
-                <a class="btn btn-link" href="#!">Project Planning</a>
-                <a class="btn btn-link" href="#!">Renovation</a>
-                <a class="btn btn-link" href="#!">Implement</a>
-                <a class="btn btn-link" href="#!">Landscape Design</a>
+            <div class="col-lg-2 col-md-6">
+                <h5 class="text-white mb-4">Jam Operasional</h5>
+
+                <ul class="list-unstyled text-light">
+                    <li class="mb-2">
+                        <i class="fa fa-clock me-2 text-primary"></i>
+                        Senin – Jumat : <strong>08.00 – 16.00</strong>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fa fa-clock me-2 text-primary"></i>
+                        Sabtu : <strong>08.00 – 12.00</strong>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fa fa-clock me-2 text-primary"></i>
+                        Minggu : <strong>Tutup</strong>
+                    </li>
+                </ul>
+
+                <hr class="border-secondary">
+
+                <p class="small text-muted">
+                    Layanan koperasi mengikuti jam kerja resmi dan hari libur nasional.
+                </p>
             </div>
+
         </div>
     </div>
     <!-- Footer End -->
